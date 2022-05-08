@@ -1,0 +1,256 @@
+:root {
+    --colorMensaje1: #0A3871;
+    --colorMensaje2: #495057;
+    --colorNinguntexto: #343A40;
+    --colorBack: #E5E5E5;
+
+    --font: 'Inter', sans-serif;;
+  }
+
+*{
+    background: #E5E5E5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+section {  
+    display: flex;
+    padding-top: 2.5em;
+    padding-bottom: 1em;
+}
+
+/* se divide en dos contenedores padre (text-lefth y text-right) hijos de section*/
+
+.text-left {
+    width: 70%;
+    padding-left: 5em;
+}
+
+.text-right {
+    width: 30%;
+    padding-left: 1em;
+    padding-right: 1.5em;
+}
+
+/**/
+
+.contenttextD {
+    width: fit-content;
+    height: 30em;
+    border-radius: 2em;
+    background: white;
+}
+
+.minitext {
+    padding-left: 1em;
+    padding-right: 1em;
+    background: white;
+    border-radius: 2em;
+    box-shadow: 0px 1.5em 2em -0.5em rgba(0, 0, 0, 0.08);
+}
+
+.texto2{
+    resize: none;
+    height: 3em;/*21em*/
+    width: 14.1em;
+    color: var(--colorMensaje2);
+    border-radius: 2em;
+    background: white;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.5em;
+    font-weight: 400;
+    border-color: white;
+    outline: none;
+    overflow: hidden
+}
+
+.cbtn{
+    border-radius: 2em;
+    background: white;
+    padding-top: 3em;
+    padding-bottom: 1em;
+    padding-left: 1.8em;
+    
+}
+
+.copybtn{
+    width: 18em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-color: var(--colorMensaje1);
+    color: var(--colorMensaje1);
+    background: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.copybtn:hover {
+    width: 18em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-color: var(--colorMensaje1);
+    color: white;
+    background: var(--colorMensaje1);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+/**/
+
+.text-l {
+    padding-left: 7em;
+    padding-top: 2em;
+}
+
+.text-l > p {
+    padding-top: 2em;
+    font-size: 0.75em;
+    font-weight: 400;
+    color: var(--colorMensaje2);
+}
+
+.texto1 {
+    resize: none;
+    color: var(--colorMensaje1);
+    font-size: 2em;
+    font-weight: 400;
+    height: 12em;
+    width: 23em;
+    border-color: var(--colorBack);
+    outline: none;
+}
+
+.texto1::placeholder {
+    color: var(--colorMensaje1);
+}
+
+.contbtns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 1em;
+    padding-right: 9em;
+}
+
+.btnen{
+    width: 18em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-color: var(--colorMensaje1);
+    color: white;
+    background: var(--colorMensaje1);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.btndes {
+    width: 18em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-color: var(--colorMensaje1);
+    color: var(--colorMensaje1);
+    background: white;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.btndes:hover{
+    width: 18em;
+    height: 4em;
+    border-radius: 2.6em;
+    border-color: var(--colorMensaje1);
+    color: white;
+    background: var(--colorMensaje1);
+    font-size: 1em;
+    font-weight: 400;
+}
+
+.imgvis {
+    background: white;
+    
+}
+
+.ninmsj{
+    background: white;
+    color: #343A40;
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.ninmsj2{
+    background: white;
+    color: #495057;
+    font-size: 1em;
+    font-weight: 400;
+    text-align: center;
+}
+
+.muñe {
+    background: white;
+}
+
+footer {
+    padding-top: 4em;
+    padding-left: 5em;
+    background-color: var(--colorMensaje1);
+}
+
+.as {
+    background: var(--colorMensaje1);
+    color: var(--colorMensaje1);
+    font-size: 3em;
+    padding-right: 1em;
+}
+
+.fa-brands {
+    background: var(--colorMensaje1);
+    color: white; 
+}
+
+.desarrollo {
+    padding-top: 2em;
+    background-color: var(--colorMensaje1);
+    color: white;
+}
+
+.name {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: var(--colorMensaje1);
+    color: white;
+}
+
+.email {
+    background-color: var(--colorMensaje1);
+    padding-top: 2em;
+    padding-bottom: 3em;
+    color: white;
+}
+
+@media screen and (max-width: 900px){
+    section {
+        flex-wrap: wrap;
+    }
+
+    .text-left, .text-right {
+        width: 100%;
+    }
+
+    .text-l {
+        padding-left: 0;
+    }
+    
+    .contenttextD {
+        padding-right: 0.5em;
+    }
+
+    .muñe {
+        width: 0%;
+        height: 0%;
+    }
+}

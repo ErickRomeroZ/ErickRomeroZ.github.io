@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b19bb8f200.js" crossorigin="anonymous"></script>
+    <script src="/encript.js"></script>  
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <section>
+        <div class="text-left">
+            <div class="logo">
+                <img src="/images/Vector.png" alt="">
+            </div>
+            <div class="text-l">
+                <div class="contenttextI">
+                    <textarea name="texto1" id="mensaje" class="texto1"  placeholder="Ingrese el texto aquí" cols="30" rows="25"></textarea>
+                </div>
+                <p><i class="fa-solid fa-circle-exclamation"></i> Sólo letras minúsculas sin acentos</p>
+                <div class="contbtns">
+                    <div class="cbtnen">
+                        <input type="button" class="btnen" id="encriptar" value="Encriptar">
+                    </div>
+                    <div class="cbtndes">
+                        <input type="button" class="btndes" id="desencriptar" value="Desencriptar">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-right">
+            <div class="minitext">
+                <div class="contenttextD" id="contimg">
+                    <textarea name="texto2" id="mensaje2" class="texto2" cols="30" rows="30" readonly></textarea>
+                    <div class="imgvis">
+                        <img class="muñe" src="/images/Muñeco.png" alt="" id="img">
+                        <p class="ninmsj" id="p1">Ningún mensaje fue encontrado</p>
+                        <p class="ninmsj2" id="p2">Ingresa el texto que desas encriptar o desencriptar.</p>
+                    </div>
+                </div>
+                <div class="cbtn">
+                    <input type="button" id="copiar" value="Copiar" class="copybtn">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h3 class="desarrollo">Desarrollado por:</h3>
+        <h3 class="name">Erick Romero</h3>
+        <a href="https://github.com/ErickRomeroZ" class="as"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/koston_2809/" class="as"><i class="fa-brands fa-instagram"></i></a>
+        <h3 class="email">email: romero.erick.enrique@gmail.com</h3>
+    </footer>
+</body>
+</html>
